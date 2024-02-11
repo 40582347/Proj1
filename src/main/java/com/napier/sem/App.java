@@ -4,8 +4,8 @@ import java.sql.*;
 
 public class App
 {
-    public static void main(String[] args)
-    {
+    private Connection con = null;
+    public static void main(String[] args) {
         // Create new Application
         App a = new App();
 
@@ -18,12 +18,13 @@ public class App
 
         // Disconnect from database
         a.disconnect();
-    }
 
+
+    }
     /**
      * Connection to MySQL database.
      */
-    private Connection con = null;
+
 
     /**
      * Connect to the MySQL database.
@@ -84,6 +85,7 @@ public class App
             }
         }
     }
+
 
     public Employee getEmployee(int ID)
     {
