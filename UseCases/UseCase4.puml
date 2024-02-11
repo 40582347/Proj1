@@ -8,9 +8,9 @@ actor Marketing as "Marketing Employee"
 rectangle Database
 
 rectangle "System" {
-    usecase UC1 as "Top Population of Countries"
+    usecase UC1 as "Top Population of Cities"
 
-    usecase UC2 as "Print Top Population by Continent"
+    usecase UC2 as "Print Top Populated Cities"
 
     usecase UC3 as "Support Business Decisions"
 
